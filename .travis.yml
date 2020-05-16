@@ -24,7 +24,7 @@ script:
   - hexo generate
 
 after_script:
-  - git config user.name "yourName"
-  - git config user.email "yourEmail"
-  - sed -i "s/gh_token/${GH_TOKEN}/g" ./_config.yml
+  - git config user.name "email"
+  - git config user.email "pwd"
+  - sed -i "s/gh_token/${gh_token}/g" ./_config.yml
   - hexo deploy
