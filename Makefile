@@ -4,3 +4,5 @@ publish:
 
 push:
 	@git add . && git commit -m 'auto:changes committed' && git push origin startup
+
+all: publish push
