@@ -1,8 +1,10 @@
 ---
-title: head-for-offer-1
+title: 《剑指offer》系列<一>
 date: 2020-05-17 21:54:06
 tags:
 - algorithm
+categories:
+- 算法
 ---
 复习《剑指offer》第一天。<!--more-->
 
@@ -29,6 +31,7 @@ func findRepeatNumber(nums []int) int {
 第二轮：[3, 1, 2, 0, 2, 5, 3]
 第三轮：[0, 1, 2, 3, 2, 5, 3]
 此时 i 递增到 4，发现 nums[i] = nums[nums[i]]，便找到了重复元素。
+
 ```golang
 func findRepeatNumber(nums []int) int {
     for i := range nums {
@@ -95,7 +98,6 @@ func replaceSpace(s string) string {
 > 问题四：输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。[LeetCode](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/submissions/)
 
 1. 解法一：递归遍历链表。
-
 ```golang
 /**
  * Definition for singly-linked list.
