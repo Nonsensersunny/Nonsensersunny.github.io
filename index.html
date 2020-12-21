@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hi, Ava Lee, I see you</title>
+  <style id="style-tag"></style>
+  <script src="dist/app.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+  <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+  <link href="https://cdn.bootcdn.net/ajax/libs/aplayer/1.9.1/APlayer.min.css" rel="stylesheet">
+</head>
+
+<body spellcheck="false">
+  <div id="content">
+    <pre contenteditable id="style-text"></pre>
+    <pre id="work-text"></pre>
+  </div>
+  <div id="header"></div>
+
+  <div id="aplayer" style="position: absolute; bottom: 0; right: 0;"></div>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-61551308-1', 'auto');
+    ga('send', 'pageview');
+
+    const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      autoplay: true,
+      mini: true,
+      loop: 'all',
+      audio: [
+        {
+          name: 'Dissolve',
+          artist: 'Absofacto',
+          url: 'https://zyven.oss-cn-beijing.aliyuncs.com/record/01%20Dissolve%20%28acoustic%29.mp3',
+          cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkJaQ4ww4Z1ignXst7nmERVDiA7uLY2VXsag&usqp=CAU'
+        },
+        {
+          name: 'For You',
+          artist: 'JJ Heller',
+          url: 'https://zyven.oss-cn-beijing.aliyuncs.com/record/JJ%20Heller%20-%20For%20You.mp3',
+          cover: 'data:image/jpeg;base64,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'
+        },
+        {
+          name: '心语星愿',
+          artist: 'Zyven',
+          url: 'https://zyven.oss-cn-beijing.aliyuncs.com/record/%E5%BF%83%E8%AF%AD%E6%98%9F%E6%84%BF.m4a',
+          cover: 'https://zyven.oss-cn-beijing.aliyuncs.com/resume/zyven.jpg'
+        }]
+    });
+  </script>
+</body>
+
+</html>
