@@ -1,0 +1,108 @@
+/**
+ *
+ * Hello~ 我是赵菊文，目前是北京理工大学软件工程专业的一名在读硕士生，
+ * 同时，也是字节跳动的一名全栈开发工程师，
+ * 我的代码写的还不错，
+ * 当然，长得也不赖:)
+ * 接下来给你讲个故事，
+ * 边听歌边听我讲故事或许会很不错？
+ * 如果碰到音乐无法自动播放，可以手动点击右下角音乐播放按钮哦～
+ */
+
+/**
+ * 故事的开始是这样的...
+ */
+
+* {
+  -webkit-transition: all 1s;
+}
+
+/**
+ * 2020.12.11
+ * 寻常的一天.
+ */
+
+html {
+  background: rgb(63, 82, 99);
+}
+
+/***
+ * 有两个年轻人互相点了“喜欢”,
+ * 于是一阵电闪雷鸣之后...
+ */
+
+pre, a {
+  color: white;
+}
+
+/**
+ * 不好意思，此处夸张了,
+ *
+ * 不过好的故事总是有出其不意的开头不是吗:)
+ *
+ * 咳咳，等我稍微整理一下情绪.
+ */
+
+pre:not(:empty) {
+  overflow: auto;
+  background: rgb(48, 48, 48);
+  border: 1px solid #ccc;
+  width: 49%;
+  font-size: 14px;
+  font-family: monospace;
+  padding: 1vh 0.5vw;
+  box-shadow: -4px 4px 2px 0 rgba(0,0,0,0.3);
+  white-space: pre-wrap;
+  outline: 0;
+  margin: 1vh 0.5vw;
+}
+
+/**
+ * 或许，再稍微调整一下坐姿？
+ * 
+ * 那么，故事继续了...
+ */
+
+#style-text {
+  -webkit-transform: translateX(95%);
+  position: absolute;
+}
+
+/**
+ * 等等，或许这种叙述的方式不太直接?
+ *
+ * 什么？你已经感到厌烦了？
+ */
+
+.comment       { color: #857F6B; font-style: italic; }
+.selector      { color: #E69F0F; }
+.selector .key { color: #64D5EA; }
+.key           { color: #64D5EA; }
+.value         { color: #BE84F2; }
+.value.px      { color: #F92772; }
+
+/**
+ * 请稍微有点耐心,
+ *
+ * 毕竟精彩的故事才刚刚开始呢.
+ */
+
+body {
+  -webkit-perspective: 1000px;
+}
+
+#style-text {
+  -webkit-transform: translateX(98.5%) rotateY(-10deg);
+  -webkit-transform-origin: right;
+}
+
+/**
+ * 好的，已经准备就绪,
+ *
+ * 我也已经迫不及待想给你讲接下来的故事了:
+ */
+
+pre:not(#style-text) {
+  -webkit-transform: rotateY(10deg);
+  -webkit-transform-origin: left;
+}
