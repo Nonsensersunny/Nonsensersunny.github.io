@@ -1,0 +1,27 @@
+
+/**
+ * 什么，故事不够精彩？
+ */
+
+#work-text.flipped {
+  -webkit-transform: rotateX(0deg) rotateY(190deg) rotateZ(180deg);
+}
+
+#work-text .md {
+  -webkit-transform: rotateY(190deg) rotateZ(180deg);
+  padding-top: 10px;
+}
+
+/**
+ * 好吧，那我来润色润色.
+ *
+ * 3...
+ * 2...
+ * 1...
+ *
+ * .
+ * ....哈哈，骗你的:)
+ *
+ * 开始了！
+ *
+ */
